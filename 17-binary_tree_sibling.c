@@ -12,11 +12,11 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 	{
 		return (NULL);
 	}
-	if (prnt->left == node && prnt->right != NULL)
+	if (prnt->left == node && prnt->right)
 	{
 		return (prnt->right);
 	}
-	if (prnt->right == node && prnt->left != NULL)
+	if (prnt->right == node && prnt->left)
 	{
 		return (prnt->left);
 	}
